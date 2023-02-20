@@ -37,6 +37,10 @@ constructor(
     return this.recipes.slice();
   }
 
+  getRecipeById(id: number) {
+    return this.recipes.slice()[id];
+  }
+
   addIngredientsToShopping(ingredients: Ingredient[]) {
     this.shoppingListService.onIngredientsAdded(ingredients);
   }
