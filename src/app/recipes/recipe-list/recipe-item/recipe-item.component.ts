@@ -12,9 +12,12 @@ export class RecipeItemComponent {
   @Input() id: number;
   // @Output() recipeSelected = new EventEmitter<Recipe>();  //service deer nemsen 
 
-  constructor(private recipeService: RecipeService) { }
+  constructor(
+    // private recipeService: RecipeService
+  ) { }
 
   onSelectedRecipe() {
-    this.recipeService.recipeSelected.emit(this.recipe);
+    // this.recipeService.recipeSelected.emit(this.recipe);
+    // this.recipeService.recipeSelected.next(this.recipe);
   }
 }
